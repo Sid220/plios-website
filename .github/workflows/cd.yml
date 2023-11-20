@@ -40,4 +40,4 @@ jobs:
           script: |
             cd /var/www/plios-website # we move into our app's folder
                git fetch
-               git pull # we pull any changes from git
+               git pull --ff-only # we pull any changes from git
