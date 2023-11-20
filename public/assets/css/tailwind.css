@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blue-reg-hover:hover {
+    background-color: #324681;
+}
+.blue-primary {
+    background-color: #1e40af;
+}
+.text-blue-primary {
+    color: #1e40af;
+}
+.hover-text-blue-primary:hover {
+    color: #1e40af;
+}
+
+.plios-form label {
+    @apply mb-6;
+    @apply w-full;
+    @apply inline-block;
+    @apply ml-6;
+    @apply text-gray-700 text-sm font-bold mb-2;
+}
+
+.plios-form textarea {
+    @apply w-1/2;
+}
+
+.plios-form textarea, .plios-form input:not([type=submit]) {
+    @apply inline-block shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none;
+    /*focus:shadow-outline;*/
+}
+
+.plios-form {
+    @apply max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28;
+}
+
+.current-page {
+    @apply block py-2 pl-3 pr-4 text-blue-primary rounded lg:bg-transparent lg:p-0;
+}

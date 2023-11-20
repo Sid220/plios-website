@@ -1,0 +1,43 @@
+{% extends "components/base" %}
+{% block body %}
+<form class="plios-form" method="POST" action="">
+    <label>Project Name
+        <input type="text" maxlength="5000" placeholder="Weather Beacon" required name="projname">
+    </label>
+    <label>Your Name
+        <input type="text" maxlength="5000" placeholder="Person McPerson" required name="pername">
+    </label>
+    <label>Email
+        <input type="email" maxlength="5000" placeholder="person@plios.tech" required name="email">
+    </label>
+    <label>Relation to project
+        <input type="text" maxlength="5000" placeholder="Lead Developer" required name="relation">
+    </label>
+    <label>Main license of project. (Must be OSI-approved)
+        <input type="text" maxlength="10" placeholder="MIT" required name="license">
+    </label>
+    <label>Website
+        <input type="text" maxlength="5000" placeholder="https://example.com" required name="url">
+    </label>
+    <label>Link to Git/SVN/Other version control repository
+        <input type="text" maxlength="5000" placeholder="https://git.plios.tech/myproj.git" required name="vc">
+    </label>
+    <label>Approx. new users/downloads per week
+        <input type="number" min="0" placeholder="10" required name="pop">
+    </label>
+    <label>Supported Platforms
+        <textarea required maxlength="5000" name="platforms" placeholder="Windows
+Mac
+Ubuntu Based Linux
+Red Hat Based Linux
+Other Linux
+Web
+Chrom(ium/e) Web Store
+Firefox Add-ons..."></textarea>
+    </label>
+    <label>Why do you want this project to join Plios?
+        <textarea maxlength="5000" required name="why"></textarea>
+    </label>
+    <input type="submit" class="text-white blue-primary blue-reg-hover focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:blue-primary focus:outline-none dark:focus:ring-purple-800" value="Apply">
+</form>
+{% endblock body %}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/assets/images/favicon.ico" type="image/ico">
+    <title>{% block title %}
+        {{ title }} | Plios
+        {% endblock title %}</title>
+
+        {% include "components/styles" %}
+</head>
+
+<body>
+    {% include "components/nav" %}
+<main>
+    {% block body %}
+    <h2>Hello World</h2>
+    {% endblock body %}
+</main>
+
+    <footer class="bg-white dark:bg-gray-800">
+        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+            <div class="grid grid-cols-2 gap-9 md:grid-cols-3 lg:grid-cols-4">
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Links</h3>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="/submission" class=" hover:underline">Apply</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/browse.html" class="hover:underline">Browse</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/blog" class="hover:underline">Official blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h3>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="https://opensource.org/licenses" class="hover:underline">Supported Licenses</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Social</h3>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="/browse.html" class=" hover:underline">Browse</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Github (coming soon)</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h3>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">About us</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="https://forms.gle/mxfmb5x5SaBRCHGH8" class="hover:underline">Contact</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/blog" class="hover:underline">Official blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+            <div class="text-center">
+                <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
+                    <img src="/public/assets/images/icon.svg" class="h-6 mr-3 sm:h-9" alt="Logo" />
+                </a>
+                <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© 2023 Plios Contributors, Some Rights Reserved. MIT License.
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+</body>
+
+</html>

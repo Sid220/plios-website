@@ -1,0 +1,18 @@
+[package]
+authors = [""]
+edition = "2018"
+name = "rocket-template"
+version = "0.1.0"
+
+[dependencies]
+askama = { git = "https://github.com/djc/askama.git", rev = "8142963", features = [
+    "config",
+    "with-rocket",
+    "mime",
+    "mime_guess",
+] }
+askama_rocket = { git = "https://github.com/djc/askama.git", rev = "8142963" }
+rocket = "0.5.0-rc.1"
+
+[build-dependencies]
+npm_rs = "0.2.1"
